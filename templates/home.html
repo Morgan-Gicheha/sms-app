@@ -1,0 +1,30 @@
+{% extends 'parent.html' %}
+{%block content%} 
+
+<!-- jumbotron section -->
+<div class="jumbotron">
+    <form action="\" method="POST">
+    <!-- reciever input section  -->
+    <div class="form-group">
+        <label for="exampleInputnumber">Recipient</label>
+        <input name="reciever" type="text" class="form-control" id="exampleInputnumber" placeholder="+2547123456789" >
+      </div>
+<!-- textarea section -->
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">compose message</label>
+        <textarea name="content_to_send" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type message"></textarea>
+      </div>
+      <!-- send sms button -->
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <button class="btn btn-primary">send message</button>
+          </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+
+
+{%endblock%}
